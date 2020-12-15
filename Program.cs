@@ -6,7 +6,8 @@ namespace InneUkeDesember2020
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Black;
+            var tegn = new Rectangle("\u2588");
+            tegn.Show();
         }
     }
 }
