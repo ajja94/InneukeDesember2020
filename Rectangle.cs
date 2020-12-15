@@ -6,8 +6,6 @@ namespace InneUkeDesember2020
 {
     class Rectangle
     {
- 
-
         public Rectangle()
         {
             
