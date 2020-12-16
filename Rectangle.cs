@@ -26,5 +26,10 @@ namespace InneUkeDesember2020
         {
             Console.WriteLine(_rectanglething);
         }
+
+        public void DrawRectangle()
+        {
+
+        }
     }
 }

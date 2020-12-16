@@ -6,7 +6,7 @@ namespace InneUkeDesember2020
     {
         static void Main(string[] args)
         {
-            var tegn = new Rectangle("\u2588");
+            var tegn = new Rectangle("\u2588", 1, 2, 5, 6);
             tegn.Show();
         }
     }
