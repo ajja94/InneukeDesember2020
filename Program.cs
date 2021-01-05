@@ -6,8 +6,10 @@ namespace InneUkeDesember2020
     {
         static void Main(string[] args)
         {
-            var tegn = new Rectangle("\u2588", 13, 2, 5, 6);
-            tegn.Show();
+            var draw = new Rectangle("\u2592", 13, 2, 5, 6);
+            var userinput = Console.ReadKey();
+            Console.WriteLine(userinput);
+            draw.Show();
         }
     }
 }
