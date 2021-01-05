@@ -11,7 +11,6 @@ namespace InneUkeDesember2020
         private int _position2;
         private int _heigth;
         private int _width;
-        private int position1;
 
         public Rectangle(string rectanglething, int position1, int position2, int heigth, int width)
         {
@@ -25,11 +24,12 @@ namespace InneUkeDesember2020
         public void Show()
         {
             Console.WriteLine(_rectanglething);
+            Console.SetCursorPosition(_position1, _position2);
         }
 
         public void DrawRectangle()
         {
-
+            
         }
     }
 }
