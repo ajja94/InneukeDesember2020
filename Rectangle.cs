@@ -23,6 +23,8 @@ namespace InneUkeDesember2020
 
         public void Show()
         {
+            Console.CursorTop = _position1;
+            Console.CursorLeft = _position2;
             Console.WriteLine(_rectanglething);
             Console.SetCursorPosition(_position1, _position2);
         }

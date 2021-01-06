@@ -7,7 +7,6 @@ namespace InneUkeDesember2020
         static void Main(string[] args)
         {
             var draw = new Rectangle("\u2592", 13, 2, 5, 6);
-            Console.SetCursorPosition(0, 5);
             var userinput = Console.ReadKey();
             Console.WriteLine(userinput);
             draw.Show();
