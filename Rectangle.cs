@@ -25,12 +25,20 @@ namespace InneUkeDesember2020
 
         public void Show()
         {
-            DrawRectangle(_position1, _position2, ConsoleColor.Green);
+            DrawCharacter(_position1, _position2, ConsoleColor.Green);
  
             //Console.SetCursorPosition(_position1, _position2);
         }
 
-        public void DrawRectangle(int _position1, int _position2, ConsoleColor consoleColor)
+        public void DrawLine(int startX, int startY, int width, ConsoleColor color)
+        {
+            for(var x = startX; x < startX; x++)
+            {
+                DrawLine(x, startY, width, ConsoleColor.Red);
+            }
+        }
+
+        public void DrawCharacter(int _position1, int _position2, ConsoleColor consoleColor)
         {
             Console.CursorLeft = _position1;
             Console.CursorTop = _position2;
