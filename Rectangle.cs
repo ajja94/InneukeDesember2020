@@ -26,16 +26,26 @@ namespace InneUkeDesember2020
         public void Show()
         {
             //DrawCharacter(_position1, _position2, ConsoleColor.Green);
-            DrawLine(_position1, _position2, _width, ConsoleColor.Magenta);
+            DrawXLine(_position1, _position2, _width, ConsoleColor.Magenta);
 
             //Console.SetCursorPosition(_position1, _position2);
         }
 
-        public void DrawLine(int startX, int startY, int width, ConsoleColor color)
+        public void DrawXLine(int startX, int startY, int width, ConsoleColor color)
         {
             for(var x = startX; x < startX + width; x++)
             {
                 DrawCharacter(x, startY, color);
+            }
+        }
+
+
+        public void DrawYLine()
+        {
+
+            for( var y = _position2; y < _position2 + _heigth; y++)
+            {
+                DrawXLine(_position1, y, _heigth, _consoleColor);
             }
         }
 
