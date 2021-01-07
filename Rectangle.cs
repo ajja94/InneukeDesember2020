@@ -26,7 +26,7 @@ namespace InneUkeDesember2020
         public void Show()
         {
             DrawCharacter(_position1, _position2, ConsoleColor.Green);
- 
+
             //Console.SetCursorPosition(_position1, _position2);
         }
 
@@ -34,7 +34,7 @@ namespace InneUkeDesember2020
         {
             for(var x = startX; x < startX; x++)
             {
-                DrawLine(x, startY, width, ConsoleColor.Red);
+                DrawCharacter(x, startY, color);
             }
         }
 
@@ -42,7 +42,7 @@ namespace InneUkeDesember2020
         {
             Console.CursorLeft = _position1;
             Console.CursorTop = _position2;
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = consoleColor;
             Console.Write(_rectanglething);
         }
     }
