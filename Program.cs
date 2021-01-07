@@ -11,6 +11,8 @@ namespace InneUkeDesember2020
             //var userinput = Console.ReadKey();
             //Console.Write(userinput);
             draw.Show();
+            
+
 
         }
     }
