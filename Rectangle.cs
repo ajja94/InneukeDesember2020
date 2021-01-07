@@ -45,7 +45,7 @@ namespace InneUkeDesember2020
 
             for( var y = _position2; y < _position2 + _heigth; y++)
             {
-                DrawXLine(_position1, y, _heigth, _consoleColor);
+                DrawXLine(_position1, y, _width, _consoleColor);
             }
         }
 
