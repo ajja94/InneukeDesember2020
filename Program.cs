@@ -15,6 +15,7 @@ namespace InneUkeDesember2020
                 draw.Show();
                 var keyInfo = Console.ReadKey();
                 var p = Point.PointFromKey(keyInfo);
+                draw.Move(p);
 
             } while (true);
             //var userinput = Console.ReadKey();

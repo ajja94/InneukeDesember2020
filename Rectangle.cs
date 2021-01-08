@@ -56,10 +56,10 @@ namespace InneUkeDesember2020
             Console.Write(_rectanglething);
         }
 
-        public void Move(int deltaX, int deltaY)
+        public void Move(Point move)
         {
-            _position1 += deltaX;
-            _position2 += deltaY;
+            _position1 += move.dX;
+            _position2 += move.dY;
         }
 
     }

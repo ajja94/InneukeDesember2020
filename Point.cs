@@ -6,8 +6,8 @@ namespace InneUkeDesember2020
 {
     class Point
     {
-        private int dX;
-        private int dY;
+        public int dX;
+        public int dY;
 
         public Point(int dx, int dy)
         {
@@ -18,10 +18,10 @@ namespace InneUkeDesember2020
         public static Point PointFromKey(ConsoleKeyInfo keyInfo)
         {
             var p = new Point(0, 0);
-            if (keyInfo.Key == ConsoleKey.LeftArrow) p.dX--;
-            else if (keyInfo.Key == ConsoleKey.RightArrow) p.dX++;
-            else if (keyInfo.Key == ConsoleKey.UpArrow) p.dX--;
-            else if (keyInfo.Key == ConsoleKey.DownArrow) p.dY++;
+            if (keyInfo.Key == ConsoleKey.LeftArrow) p = new Point(-1, 0);
+            else if (keyInfo.Key == ConsoleKey.RightArrow) p = new Point(1, 0);
+            else if (keyInfo.Key == ConsoleKey.UpArrow) p = new Point(0, -1);
+            else if (keyInfo.Key == ConsoleKey.DownArrow) p = new Point(0, 1);
 
             return p;
         }
