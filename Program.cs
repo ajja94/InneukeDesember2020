@@ -8,9 +8,14 @@ namespace InneUkeDesember2020
         static void Main(string[] args)
         {
             var draw = new Rectangle("\u2592", 1, 3, 5, 16, ConsoleColor.Magenta);
+            do
+            {
+                Console.Clear();
+                draw.Show();
+            } while (true);
             //var userinput = Console.ReadKey();
             //Console.Write(userinput);
-            draw.Show();
+            
             
 
 
