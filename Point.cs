@@ -9,12 +9,18 @@ namespace InneUkeDesember2020
         int dX = 0;
         int dY = 0;
 
-        public  Point PointFromKey(ConsoleKeyInfo keyInfo)
+        public Point(int dx, int dy)
         {
-            if (keyInfo.Key == ConsoleKey.LeftArrow) dX--;
-            else if (keyInfo.Key == ConsoleKey.RightArrow) dX++;
-            else if (keyInfo.Key == ConsoleKey.UpArrow) dY--;
-            else if (keyInfo.Key == ConsoleKey.DownArrow) dY++;
+            dX = dx;
+            dY = dy;
+        }
+
+        public static Point PointFromKey(ConsoleKeyInfo keyInfo)
+        {
+            if (keyInfo.Key == ConsoleKey.LeftArrow) dx--;
+            else if (keyInfo.Key == ConsoleKey.RightArrow) dx++;
+            else if (keyInfo.Key == ConsoleKey.UpArrow) dy--;
+            else if (keyInfo.Key == ConsoleKey.DownArrow) dy++;
 
             return Point;
         }
