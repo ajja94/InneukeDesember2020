@@ -59,8 +59,7 @@ namespace InneUkeDesember2020
         public void Move(int deltaX, int deltaY)
         {
             _position1 += deltaX;
-            _position2 -= deltaY;
-
+            _position2 += deltaY;
         }
 
     }
