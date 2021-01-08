@@ -19,10 +19,10 @@ namespace InneUkeDesember2020
                 Console.Clear();
                 draw.Show();
                 var keyInfo = Console.ReadKey();
-                if (keyInfo.Key == ConsoleKey.LeftArrow) draw.Move(dX, dY);
-                else if (keyInfo.Key == ConsoleKey.RightArrow) draw.Move(dX, dY);
-                else if (keyInfo.Key == ConsoleKey.UpArrow) draw.Move(dX, dY);
-                else if (keyInfo.Key == ConsoleKey.DownArrow) draw.Move(dX, dY);
+                if (keyInfo.Key == ConsoleKey.LeftArrow) draw.Move(dX++, dY++);
+                else if (keyInfo.Key == ConsoleKey.RightArrow) draw.Move(dX++, dY++);
+                else if (keyInfo.Key == ConsoleKey.UpArrow) draw.Move(dX++, dY++);
+                else if (keyInfo.Key == ConsoleKey.DownArrow) draw.Move(dX++, dY++);
             } while (true);
             //var userinput = Console.ReadKey();
             //Console.Write(userinput);
