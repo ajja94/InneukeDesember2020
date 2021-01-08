@@ -39,7 +39,6 @@ namespace InneUkeDesember2020
             }
         }
 
-
         public void DrawYLine()
         {
 
@@ -56,5 +55,13 @@ namespace InneUkeDesember2020
             Console.ForegroundColor = consoleColor;
             Console.Write(_rectanglething);
         }
+
+        public void Move(int deltaX, int deltaY)
+        {
+            _position1 += deltaX;
+            _position2 -= deltaY;
+
+        }
+
     }
 }
